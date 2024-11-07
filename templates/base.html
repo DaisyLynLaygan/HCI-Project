@@ -1,0 +1,86 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnliFunds</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='w3.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/" style="text-decoration:none;"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="OnliFunds Logo" class="logo-img"></a>
+            <div class="logo-text">
+                <h1><a href="/" style="text-decoration:none;">OnliFunds</a></h1>
+                <p>Empower Your Ideas</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/about" class="nav-item">About</a>
+            <a href="/projects" class="nav-item">Projects</a>
+            <a href="/start" class="nav-item start-project-button">Start a Project</a>
+            <a href="/login" class="nav-item">Log In</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="footer-content">
+			<!-- About Section -->
+			<div class="footer-section about" style="text-align: left; padding-right:200px;">
+				<h2 class="footer-logo">OnliFunds</h2>
+				<p class="footer-description">
+					OnliFunds is a crowdfunding website that lets you raise money for anything that matters to you.
+					From personal causes and events to projects and more. We aim to help people from our community
+					to raised the funds they need.
+				</p>
+			</div>
+
+			<!-- Links Section -->
+			<div class="footer-section links" style="text-align: left; padding-right:200px;">
+				<h3 class="footer-heading">Learn More</h3>
+				<ul class="footer-links">
+					<li><a href="/about">About</a></li>
+					<li><a href="/#team-members">Team Members</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms And Conditions</a></li>
+				</ul>
+			</div>
+
+			<!-- Social Media Section -->
+			<div class="footer-section social-media" style="text-align: left;">
+				<h3 class="footer-heading">Social Medias</h3>
+				<ul class="social-icons">
+					<li><a href="#"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook Icon" style="	width: 28px;height:auto;"> Facebook</a></li>
+					<li><a href="#"><img src="{{ url_for('static', filename='images/twitter.png') }}" alt="Twitter Icon" style="	width: 28px;height:auto;"> Twitter</a></li>
+					<li><a href="#"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram Icon" style="	width: 28px;height:auto;"> Instagram</a></li>
+					<li><a href="#"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn Icon" style="	width: 28px;height:auto;"> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Copyright Section -->
+		<div class="footer-bottom">
+			<p>© 2024 Copyright OnliFunds. All Rights Reserved</p>
+		</div>
+	</footer>
+
+
+	<!-- Link Font Awesome for Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMtl/tE7HT72fSUkSuZXCe9jKg6abX5xnu2bDbD" crossorigin="anonymous">
+
+
+</body>
+</html>

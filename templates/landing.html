@@ -1,0 +1,284 @@
+<!-- templates/landing.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text"> 
+        <div class="crowdfunding-label">
+            <span class="line"></span>
+            <span class="label-text">Crowdfunding</span>
+        </div class="herotext">
+        <h1>Empowering Ideas<br>Fueling Innovation Together</h1>
+        <p style="max-width: 600px;">This is a space for visionaries and supporters alike. Creators bring their concepts, passion, and vision, while supporters bring the resources to make them real. As a backer, your support empowers creators to turn ambitious ideas into impactful solutions. Together, we're building a community dedicated to innovation and progress. Join us in making ideas come to life.</p>
+        <div class="hero-buttons">
+            <button class="learn-more">Learn More</button>
+            <button class="donate">Donate</button>
+        </div>
+    </div>
+    <div class="hero-image">
+        <!-- Main hero image -->
+        <img src="{{ url_for('static', filename='images/Mask Group.png') }}" alt="Donation Image" class="hero-img">
+    </div>
+</section>
+
+<!-- Featured Categories Section -->
+<section class="categories">
+    <h2 class="categories-title">Categories</h2>
+    <h3 class="categories-subtitle">Explore Our Crowdfunding Featured Categories</h3>
+    <p class="categories-description">
+        Discover a variety of innovative projects across categories that match your passions and interests. 
+        From tech to art, find campaigns that inspire you to make a difference by supporting creators worldwide.
+    </p>
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/technology.png') }}" alt="Technology Icon">
+            <h4>Technology</h4>
+        </div>
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/health.png') }}" alt="Health Icon">
+            <h4>Health</h4>
+        </div>
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/education.png') }}" alt="Education Icon">
+            <h4>Education</h4>
+        </div>
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/business.png') }}" alt="Business Icon">
+            <h4>Business</h4>
+        </div>
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/environment.png') }}" alt="Environment Icon">
+            <h4>Environment</h4>
+        </div>
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='images/animals.png') }}" alt="Animals Icon">
+            <h4>Animals</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Projects Section -->
+<section class="recent-projects">
+    <h2 class="recent-title">Recent Projects</h2>
+    <p class="recent-description">
+        Explore our latest projects from innovative creators around the world. Each project represents a unique vision, from groundbreaking tech to creative arts, waiting for supporters like you to help turn ideas into reality. Join others in backing these fresh campaigns and be part of their journey to success.
+    </p>
+    <div class="project-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <span class="project-category">Health</span>
+                <h3>Help Us Bring Life-Saving Treatments to Those in Need</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div> <!-- Adjust percentage as needed -->
+                </div>
+			<div class="project-details">
+				<div class="project-fund">
+					<span class="icon-money"></span> 10,000
+				</div>
+				<div class="project-time">
+					<span class="icon-calendar"></span> 45 Days Left
+				</div>
+			</div>			<div class="project-author">
+				<div class="author-icon">AG</div>
+				<div class="author-info">
+					<span class="author-name">Anita Gamboa</span>
+					<span><a href="#" class="campaign-link">5 Campaign</a> | Cebu, City</span>
+				</div>
+			</div>
+            </div>
+        </div>
+		<!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <span class="project-category">Health</span>
+                <h3>Help Us Bring Life-Saving Treatments to Those in Need</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div> <!-- Adjust percentage as needed -->
+                </div>
+			<div class="project-details">
+				<div class="project-fund">
+					<span class="icon-money"></span> 10,000
+				</div>
+				<div class="project-time">
+					<span class="icon-calendar"></span> 45 Days Left
+				</div>
+			</div>			<div class="project-author">
+				<div class="author-icon">AG</div>
+				<div class="author-info">
+					<span class="author-name">Anita Gamboa</span>
+					<span><a href="#" class="campaign-link">5 Campaign</a> | Cebu, City</span>
+				</div>
+			</div>
+            </div>
+        </div>
+		<!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <span class="project-category">Health</span>
+                <h3>Help Us Bring Life-Saving Treatments to Those in Need</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div> <!-- Adjust percentage as needed -->
+                </div>
+			<div class="project-details">
+				<div class="project-fund">
+					<span class="icon-money"></span> 10,000
+				</div>
+				<div class="project-time">
+					<span class="icon-calendar"></span> 45 Days Left
+				</div>
+			</div>			<div class="project-author">
+				<div class="author-icon">AG</div>
+				<div class="author-info">
+					<span class="author-name">Anita Gamboa</span>
+					<span><a href="#" class="campaign-link">5 Campaign</a> | Cebu, City</span>
+				</div>
+			</div>
+            </div>
+        </div>
+		<!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <span class="project-category">Health</span>
+                <h3>Help Us Bring Life-Saving Treatments to Those in Need</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div> <!-- Adjust percentage as needed -->
+                </div>
+			<div class="project-details">
+				<div class="project-fund">
+					<span class="icon-money"></span> 10,000
+				</div>
+				<div class="project-time">
+					<span class="icon-calendar"></span> 45 Days Left
+				</div>
+			</div>			<div class="project-author">
+				<div class="author-icon">AG</div>
+				<div class="author-info">
+					<span class="author-name">Anita Gamboa</span>
+					<span><a href="#" class="campaign-link">5 Campaign</a> | Cebu, City</span>
+				</div>
+			</div>
+            </div>
+        </div>
+        <!-- Repeat similar structure for other project cards -->
+    </div>
+</section>
+<!-- Meet Our Team Member Section -->
+<section class="team-members" id="team-members">
+    <h3 class="team-title">TEAM MEMBER</h3>
+    <h2 class="meet-title">Meet Our Team Member</h2>
+    <p class="team-description">
+        Meet the dedicated team that powers our platform. With diverse expertise and a shared commitment to impact, each team member plays a crucial role in helping us achieve our goals.
+    </p>
+
+    <div class="carousel">
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <!-- Cloned last few slides for seamless looping -->
+                {% for member in team_members[-4:] %}
+                <li class="carousel-slide" style="list-style: none;">
+                    <div class="team-member-card">
+                        <img src="{{ url_for('static', filename='images/member.png') }}" alt="Team Member" class="team-member-photo">
+                        <p class="team-member-name">{{ member.name }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+
+                <!-- Original slides -->
+                {% for member in team_members %}
+                <li class="carousel-slide" style="list-style: none;">
+                    <div class="team-member-card">
+                        <img src="{{ url_for('static', filename='images/member.png') }}" alt="Team Member" class="team-member-photo">
+                        <p class="team-member-name">{{ member.name }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+
+                <!-- Cloned first few slides for seamless looping -->
+                {% for member in team_members[:4] %}
+                <li class="carousel-slide" style="list-style: none;">
+                    <div class="team-member-card">
+                        <img src="{{ url_for('static', filename='images/member.png') }}" alt="Team Member" class="team-member-photo">
+                        <p class="team-member-name">{{ member.name }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    const totalSlides = slides.length;
+
+    let currentIndex = 4; // Start at the first real slide after the cloned beginning
+    const slideInterval = 3000; // 3 seconds
+
+    // Initial Positioning
+    track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+
+    const moveToSlide = () => {
+        currentIndex++;
+        track.style.transition = 'transform 0.5s ease-in-out';
+        track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+
+        // When reaching the cloned last slides, jump back to the first set
+        if (currentIndex >= totalSlides - 4) {
+            setTimeout(() => {
+                track.style.transition = 'none';
+                currentIndex = 4; // Reset back to the start of original slides
+                track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+            }, 500); // Delay for the transition to finish
+        }
+
+        // When reaching the cloned first slides, jump back to the last set
+        if (currentIndex <= 3) {
+            setTimeout(() => {
+                track.style.transition = 'none';
+                currentIndex = totalSlides - 8; // Set to end of original slides
+                track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+            }, 500);
+        }
+    };
+
+    // Start automatic sliding
+    setInterval(moveToSlide, slideInterval);
+});
+</script>
+
+<!-- Statistics Section -->
+<section class="statistics">
+    <div class="stat-item">
+        <h2 class="stat-value" style="color:white;">20</h2>
+        <p class="stat-label"style="color:white;">Total Users</p>
+    </div>
+    <div class="stat-item">
+        <h2 class="stat-value"style="color:white;">1k</h2>
+        <p class="stat-label"style="color:white;">Donations</p>
+    </div>
+    <div class="stat-item">
+        <h2 class="stat-value"style="color:white;">4</h2>
+        <p class="stat-label"style="color:white;">Projects</p>
+    </div>
+</section
+
+<!-- Banner Section -->
+<section class="banner-section">
+    <div class="overlay"></div>
+    <div class="banner-content">
+        <h1>"Help Bring Dreams to Life"</h1>
+        <a href="#" class="donate-button" style="font-weight:bold;">DONATE</a>
+    </div>
+</section>
+
+{% endblock %}
